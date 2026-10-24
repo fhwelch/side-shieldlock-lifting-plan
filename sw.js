@@ -1,5 +1,5 @@
 // Side Shieldlock PWA shell. Supabase requests, auth and workout data are NEVER cached.
-const CACHE = 'side-shieldlock-shell-v1';
+const CACHE = 'side-shieldlock-shell-guest-v2';
 const SHELL = ['./icon-192.png','./icon-512.png','./apple-touch-icon.png','./manifest.webmanifest'];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(SHELL)).then(() => self.skipWaiting()));
